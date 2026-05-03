@@ -72,31 +72,16 @@ export function Contact() {
                 </p>
               </div>
 
-              <div className="bg-card border border-border p-8 rounded-3xl">
-                <h3 className="text-2xl font-bold text-text mb-6">Provide Your Requirements</h3>
-                <p className="text-text-muted mb-6">To help us respond quickly, include:</p>
-                <ul className="flex flex-col gap-4 text-text font-medium">
-                  <li className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                      <Package className="w-5 h-5" />
-                    </div>
-                    Product(s) required (e.g., Urea 46%, NPK fertilizer, DAP fertilizer, Potash (KCl))
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
-                      <Building2 className="w-5 h-5" />
-                    </div>
-                    Required quantities
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-accent/10 text-accent flex items-center justify-center shrink-0">
-                      <Globe2 className="w-5 h-5" />
-                    </div>
-                    Delivery location or port
-                  </li>
-                </ul>
-              </div>
+            </motion.div>
 
+            {/* Right Col - Form */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="lg:col-span-7 flex flex-col gap-8"
+            >
               {/* Strict Filter Note */}
               <div className="bg-secondary/10 border border-secondary/20 p-8 rounded-3xl">
                 <h3 className="text-xl font-bold text-secondary mb-4">Important Notice</h3>
@@ -108,17 +93,9 @@ export function Contact() {
                   <li>• Retail or small-quantity inquiries</li>
                 </ul>
               </div>
-            </motion.div>
 
-            {/* Right Col - Form */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="lg:col-span-7 glass p-8 md:p-10 rounded-3xl border border-border"
-            >
-              <h2 className="text-3xl font-heading font-bold text-text mb-8">Submit Your Inquiry</h2>
+              <div className="glass p-8 md:p-10 rounded-3xl border border-border">
+                <h2 className="text-3xl font-heading font-bold text-text mb-8">Submit Your Inquiry</h2>
               <form action="https://api.web3forms.com/submit" method="POST" className="flex flex-col gap-6">
                 <input type="hidden" name="access_key" value="e90167bf-95f0-44aa-b4f6-0fbf886c0596" />
                 <input type="hidden" name="redirect" value={window.location.origin + '/thank-you'} />
@@ -170,17 +147,45 @@ export function Contact() {
                   Submit Inquiry <Send className="w-5 h-5" />
                 </Button>
               </form>
+              </div>
             </motion.div>
 
           </div>
 
-          <div className="mt-20 text-center max-w-2xl mx-auto">
-            <p className="text-lg text-text-muted">
-              All products are supplied in bulk quantities for commercial use only.
-            </p>
-            <p className="text-xl font-bold text-text mt-2">
-              Minimum order: bulk / wholesale volumes.<br />Business inquiries only.
-            </p>
+          <div className="mt-20 max-w-4xl mx-auto flex flex-col gap-12">
+            <div className="bg-card border border-border p-8 md:p-12 rounded-3xl text-center md:text-left">
+              <h3 className="text-2xl font-bold text-text mb-6">Provide Your Requirements</h3>
+              <p className="text-text-muted mb-8 text-lg">To help us respond quickly, please include:</p>
+              <ul className="grid grid-cols-1 md:grid-cols-3 gap-8 text-text font-medium">
+                <li className="flex flex-col items-center md:items-start gap-4">
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                    <Package className="w-7 h-7" />
+                  </div>
+                  <span className="text-center md:text-left">Product(s) required<br/><span className="text-sm text-text-muted font-normal">(e.g., Urea 46%, NPK, DAP, Potash)</span></span>
+                </li>
+                <li className="flex flex-col items-center md:items-start gap-4">
+                  <div className="w-14 h-14 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+                    <Building2 className="w-7 h-7" />
+                  </div>
+                  <span className="text-center md:text-left">Required bulk<br/><span className="text-sm text-text-muted font-normal">quantities</span></span>
+                </li>
+                <li className="flex flex-col items-center md:items-start gap-4">
+                  <div className="w-14 h-14 rounded-2xl bg-accent/10 text-accent flex items-center justify-center shrink-0">
+                    <Globe2 className="w-7 h-7" />
+                  </div>
+                  <span className="text-center md:text-left">Delivery location<br/><span className="text-sm text-text-muted font-normal">or destination port</span></span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="text-center border-t border-border pt-12">
+              <p className="text-lg text-text-muted">
+                All products are supplied in bulk quantities for commercial use only.
+              </p>
+              <p className="text-xl font-bold text-text mt-2">
+                Minimum order: bulk / wholesale volumes.<br />Business inquiries only.
+              </p>
+            </div>
           </div>
         </div>
       </section>
