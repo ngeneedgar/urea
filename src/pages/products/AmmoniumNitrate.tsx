@@ -7,7 +7,7 @@ import { Button } from '../../components/Button';
 const products = [
   {
     id: 'ammonium-nitrate',
-    name: 'Ammonium Nitrate',
+    name: 'Ammonium nitrate Fertilizer',
     image: 'https://i.postimg.cc/qRpXYS47/ammonium-nitrate-11.webp',
     description: 'Ammonium nitrate was the first solid nitrogen (N) fertilizer produced on a large scale. It provides half of the N in the nitrate form and half in the ammonium form, making it a highly effective and popular fertilizer.',
     specs: [
@@ -41,7 +41,7 @@ export function AmmoniumNitrate() {
       <section className="relative py-32 overflow-hidden bg-card border-b border-border">
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-heading font-extrabold tracking-tight text-text mb-6">
-            Ammonium <span className="text-gradient">Nitrate</span>
+            Ammonium nitrate <span className="text-gradient">Fertilizer</span>
           </h1>
           <p className="text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
             A traditional, highly effective nitrogen source offering rapid nutrient availability.

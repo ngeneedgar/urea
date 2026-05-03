@@ -37,7 +37,7 @@ const products = [
   },
   {
     id: 'dap',
-    title: 'DAP Fertilizer',
+    title: 'DAP fertilizer [Diammonium Phosphate]',
     description: 'Phosphorus-rich fertilizer that supports root development and early crop establishment.',
     cta: '👉 Request DAP Pricing',
     image: 'https://i.postimg.cc/yYk8chfT/Diammonium_Phosphate_(DAP)_Fertilizers.jpg',
@@ -45,7 +45,7 @@ const products = [
   },
   {
     id: 'map',
-    title: 'MAP Fertilizer',
+    title: 'MAP fertilizer [Monoammonium Phosphate]',
     description: 'Efficient phosphorus source for early-stage growth and nutrient uptake.',
     cta: '👉 Request MAP Pricing',
     image: 'https://i.postimg.cc/nznY5gps/MAP.jpg',
@@ -53,7 +53,7 @@ const products = [
   },
   {
     id: 'can',
-    title: 'CAN Fertilizer',
+    title: 'CAN fertilizer [Calcium Ammonium Nitrate]',
     description: 'Provides stable nitrogen supply with added calcium for improved plant and soil performance.',
     cta: '👉 Request CAN Pricing',
     image: 'https://i.postimg.cc/ZRJFg24b/CAN.jpg',
@@ -61,8 +61,8 @@ const products = [
   },
   {
     id: 'ammonium-nitrate',
-    title: 'Ammonium Nitrate Fertilizer',
-    subtitle: 'Ammonium nitrate',
+    title: 'Ammonium nitrate Fertilizer',
+    subtitle: 'Ammonium nitrate Fertilizer',
     description: 'Fast-acting nitrogen fertilizer designed for rapid crop response and efficient nutrient absorption.',
     cta: '👉 Request Pricing',
     image: 'https://i.postimg.cc/qRpXYS47/ammonium-nitrate-11.webp',
@@ -70,8 +70,8 @@ const products = [
   },
   {
     id: 'potash',
-    title: 'Potassium Chloride (Potash)',
-    subtitle: 'Potash (KCl)',
+    title: 'Potassium Chloride Fertilizer [Potash]',
+    subtitle: 'Potassium Chloride Fertilizer [Potash]',
     description: 'Essential potassium fertilizer that supports crop strength, quality, and yield.',
     cta: '👉 Request Potash Pricing',
     image: 'https://i.postimg.cc/ZqVVxxmM/Potash-(KCI).jpg',
@@ -81,14 +81,14 @@ const products = [
 
 export function Products() {
   useEffect(() => {
-    document.title = 'Bulk Fertilizer Supplier | NPK, Urea, DAP, MAP, CAN, Potash';
+    document.title = 'Bulk Fertilizer Supplier | NPK, Urea, DAP, MAP, CAN, Potassium Chloride';
     let metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Bulk fertilizer supply for farms and distributors. NPK, Urea 46%, DAP, MAP, CAN, Ammonium Nitrate, and Potash (KCl). Request wholesale pricing today.');
+      metaDescription.setAttribute('content', 'Bulk fertilizer supply for farms and distributors. NPK, Urea 46%, DAP, MAP, CAN, Ammonium nitrate Fertilizer, and Potassium Chloride Fertilizer [Potash]. Request wholesale pricing today.');
     } else {
       metaDescription = document.createElement('meta');
       metaDescription.setAttribute('name', 'description');
-      metaDescription.setAttribute('content', 'Bulk fertilizer supply for farms and distributors. NPK, Urea 46%, DAP, MAP, CAN, Ammonium Nitrate, and Potash (KCl). Request wholesale pricing today.');
+      metaDescription.setAttribute('content', 'Bulk fertilizer supply for farms and distributors. NPK, Urea 46%, DAP, MAP, CAN, Ammonium nitrate Fertilizer, and Potassium Chloride Fertilizer [Potash]. Request wholesale pricing today.');
       document.head.appendChild(metaDescription);
     }
   }, []);

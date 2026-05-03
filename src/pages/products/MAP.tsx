@@ -7,7 +7,7 @@ import { Button } from '../../components/Button';
 const products = [
   {
     id: 'map-granular',
-    name: 'Monoammonium Phosphate (MAP)',
+    name: 'MAP fertilizer [Monoammonium Phosphate]',
     image: 'https://i.postimg.cc/nznY5gps/MAP.jpg',
     description: 'Monoammonium phosphate (MAP) is a widely used source of phosphorus (P) and nitrogen (N). It’s made of two constituents common in the fertilizer industry and contains the most phosphorus of any common solid fertilizer.',
     specs: [
@@ -43,7 +43,7 @@ export function MAP() {
       <section className="relative py-32 overflow-hidden bg-card border-b border-border">
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-heading font-extrabold tracking-tight text-text mb-6">
-            Monoammonium <span className="text-gradient">Phosphate</span>
+            MAP fertilizer <span className="text-xl md:text-3xl block text-gradient mt-4">[Monoammonium Phosphate]</span>
           </h1>
           <p className="text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
             A premium source of phosphorus and nitrogen for healthy, sustained crop growth.

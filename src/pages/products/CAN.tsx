@@ -7,7 +7,7 @@ import { Button } from '../../components/Button';
 const products = [
   {
     id: 'can-granular',
-    name: 'Calcium Ammonium Nitrate (CAN)',
+    name: 'CAN fertilizer [Calcium Ammonium Nitrate]',
     image: 'https://i.postimg.cc/ZRJFg24b/CAN.jpg',
     description: 'Calcium ammonium nitrate (CAN), the granulated nitrogen fertilizer, guarantees the secure supply of plants with nitrogen. The combination of ammonium nitrogen and nitrate nitrogen makes CAN an all-rounder for all fertilizer measures.',
     specs: [
@@ -43,7 +43,7 @@ export function CAN() {
       <section className="relative py-32 overflow-hidden bg-card border-b border-border">
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-heading font-extrabold tracking-tight text-text mb-6">
-            Calcium Ammonium <span className="text-gradient">Nitrate</span>
+            CAN fertilizer <span className="text-xl md:text-3xl block text-gradient mt-4">[Calcium Ammonium Nitrate]</span>
           </h1>
           <p className="text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
             A high-efficiency granulated nitrogen fertilizer for secure plant nutrition.

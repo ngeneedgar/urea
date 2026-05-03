@@ -208,35 +208,35 @@ export function Home() {
               delay={0.1}
             />
             <ProductCard
-              title="DAP fertilizer"
+              title="DAP fertilizer [Diammonium Phosphate]"
               description="Phosphorus-rich fertilizer for root development."
               image="https://i.postimg.cc/yYk8chfT/Diammonium_Phosphate_(DAP)_Fertilizers.jpg"
               link="/products/dap"
               delay={0.2}
             />
             <ProductCard
-              title="MAP fertilizer"
+              title="MAP fertilizer [Monoammonium Phosphate]"
               description="Efficient phosphorus source for early plant establishment."
               image="https://i.postimg.cc/nznY5gps/MAP.jpg"
               link="/products/map"
               delay={0.3}
             />
             <ProductCard
-              title="CAN fertilizer"
+              title="CAN fertilizer [Calcium Ammonium Nitrate]"
               description="Stable nitrogen supply with added calcium support."
               image="https://i.postimg.cc/ZRJFg24b/CAN.jpg"
               link="/products/can"
               delay={0.4}
             />
             <ProductCard
-              title="Ammonium nitrate"
+              title="Ammonium nitrate Fertilizer"
               description="Fast-acting nitrogen source for rapid crop response."
               image="https://i.postimg.cc/qRpXYS47/ammonium-nitrate-11.webp"
               link="/products/ammonium-nitrate"
               delay={0.5}
             />
             <ProductCard
-              title="Potash (KCl)"
+              title="Potassium Chloride Fertilizer [Potash]"
               description="Essential potassium source for crop strength and yield quality."
               image="https://i.postimg.cc/ZqVVxxmM/Potash-(KCI).jpg"
               link="/products/potash"

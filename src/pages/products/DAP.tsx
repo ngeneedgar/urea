@@ -83,7 +83,7 @@ export function DAP() {
         <div className="absolute inset-0 z-0">
           <img
             src="https://i.postimg.cc/yYk8chfT/Diammonium_Phosphate_(DAP)_Fertilizers.jpg"
-            alt="DAP Fertilizers"
+            alt="DAP fertilizer [Diammonium Phosphate]"
             className="w-full h-full object-cover opacity-10"
             referrerPolicy="no-referrer"
           />
@@ -106,7 +106,7 @@ export function DAP() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-5xl md:text-7xl font-heading font-extrabold tracking-tight text-text mb-6"
           >
-            Essential <span className="text-gradient">Phosphorus</span>
+            DAP fertilizer <span className="text-xl md:text-3xl block text-gradient mt-4">[Diammonium Phosphate]</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

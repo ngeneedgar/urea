@@ -7,7 +7,7 @@ import { Button } from '../../components/Button';
 const products = [
   {
     id: 'potash',
-    name: 'Potassium Chloride (KCl)',
+    name: 'Potassium Chloride Fertilizer [Potash]',
     image: 'https://i.postimg.cc/ZqVVxxmM/Potash-(KCI).jpg',
     description: 'Potassium chloride (KCl), the most commonly used source of potassium, is essential for overcoming plant deficiencies and maintaining crop strength and yield quality.',
     specs: [
@@ -42,7 +42,7 @@ export function Potash() {
       <section className="relative py-32 overflow-hidden bg-card border-b border-border">
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-heading font-extrabold tracking-tight text-text mb-6">
-            Potassium Chloride <span className="text-gradient">(KCl)</span>
+            Potassium Chloride <span className="text-xl md:text-3xl block text-gradient mt-4">Fertilizer [Potash]</span>
           </h1>
           <p className="text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
             Essential potassium source for robust crop growth, stress tolerance, and quality yields.

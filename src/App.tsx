@@ -5,7 +5,6 @@ import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { Products } from './pages/Products';
 import { Urea } from './pages/products/Urea';
-import { AmmoniumSulfate } from './pages/products/AmmoniumSulfate';
 import { DAP } from './pages/products/DAP';
 import { NPK } from './pages/products/NPK';
 import { MAP } from './pages/products/MAP';
@@ -28,7 +27,6 @@ export default function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="products" element={<Products />} />
           <Route path="products/urea" element={<Urea />} />
-          <Route path="products/ammonium-sulfate" element={<AmmoniumSulfate />} />
           <Route path="products/dap" element={<DAP />} />
           <Route path="products/npk" element={<NPK />} />
           <Route path="products/map" element={<MAP />} />

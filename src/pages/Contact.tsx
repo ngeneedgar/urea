@@ -57,7 +57,7 @@ export function Contact() {
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
                     <Package className="w-7 h-7" />
                   </div>
-                  <span className="text-center md:text-left">Product(s) required<br/><span className="text-sm text-text-muted font-normal">(e.g., Urea 46%, NPK, DAP, Potash)</span></span>
+                  <span className="text-center md:text-left">Product(s) required<br/><span className="text-sm text-text-muted font-normal">(e.g., Urea 46%, NPK, DAP, Potassium Chloride)</span></span>
                 </li>
                 <li className="flex flex-col items-center md:items-start gap-4">
                   <div className="w-14 h-14 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">

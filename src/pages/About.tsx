@@ -50,7 +50,7 @@ export function About() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-xl text-text-muted max-w-2xl mx-auto leading-relaxed mb-8"
           >
-            We focus on manufacturing and supplying high-demand fertilizers including NPK, Urea, DAP, MAP, CAN, Ammonium Nitrate, and Potash (KCl), ensuring consistent availability for commercial agricultural operations.
+            We focus on manufacturing and supplying high-demand fertilizers including NPK, Urea, DAP, MAP, CAN, Ammonium nitrate Fertilizer, and Potassium Chloride Fertilizer [Potash], ensuring consistent availability for commercial agricultural operations.
           </motion.p>
         </div>
       </section>
