@@ -11,7 +11,7 @@ const navLinks = [
     name: 'Products',
     path: '/products',
     dropdown: [
-      { name: 'Compound NPK', path: '/products/npk' },
+      { name: 'NPK Fertilizer', path: '/products/npk' },
       { name: 'Urea Fertilizers', path: '/products/urea' },
       { name: 'DAP Fertilizers', path: '/products/dap' },
       { name: 'Ammonium Sulfate', path: '/products/ammonium-sulfate' },

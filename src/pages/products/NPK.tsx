@@ -26,7 +26,7 @@ export function NPK() {
         <div className="absolute inset-0 z-0">
           <img
             src="https://i.postimg.cc/wTZTVtPb/Compound_NPK_Fertilizers.jpg"
-            alt="Compound NPK Fertilizers"
+            alt="NPK Fertilizers"
             className="w-full h-full object-cover opacity-10"
             referrerPolicy="no-referrer"
           />
@@ -57,7 +57,7 @@ export function NPK() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-text-muted max-w-2xl mx-auto leading-relaxed"
           >
-            Our Compound NPK fertilizers provide a precise blend of Nitrogen, Phosphorus, and Potassium in every single granule for uniform crop growth.
+            Our NPK fertilizers provide a precise blend of Nitrogen, Phosphorus, and Potassium in every single granule for uniform crop growth.
           </motion.p>
         </div>
       </section>
