@@ -54,20 +54,31 @@ export function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
               >
-                <div className="flex flex-col gap-6">
-                <Link 
-                  to="#products" 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
-                  }} 
-                  className="inline-flex items-center gap-2 text-white font-medium hover:gap-4 transition-all"
-                >
-                  Request Bulk Pricing <ArrowRight className="w-5 h-5" />
-                </Link>
-                <p className="text-white/90 font-medium">
-                  <strong className="border-b-2 border-white">Business inquiries only. No retail sales or employment opportunities.</strong>
-                </p>
+                <div className="flex flex-col gap-8">
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Button 
+                      size="lg" 
+                      onClick={() => {
+                        document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
+                      }} 
+                      className="w-full sm:w-auto text-lg px-8 py-4 group"
+                    >
+                      View Products
+                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                    <Link to="/contact" className="w-full sm:w-auto">
+                      <Button 
+                        size="lg" 
+                        variant="outline" 
+                        className="w-full shadow-xl text-lg px-8 py-4 text-white border-white/30 bg-black/20 hover:bg-black/40 backdrop-blur-sm"
+                      >
+                        Request Bulk Pricing
+                      </Button>
+                    </Link>
+                  </div>
+                  <p className="text-white/90 font-medium">
+                    <strong className="border-b-2 border-white/50 pb-1">Business inquiries only. No retail sales or employment opportunities.</strong>
+                  </p>
                 </div>
               </motion.div>
             </div>
