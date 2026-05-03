@@ -47,6 +47,34 @@ export function Contact() {
       {/* Intro & Form */}
       <section className="py-24 relative bg-background">
         <div className="container mx-auto px-4 md:px-6">
+          
+          <div className="max-w-5xl mx-auto mb-16">
+            <div className="bg-card border border-border p-8 md:p-12 rounded-3xl text-center md:text-left">
+              <h3 className="text-2xl font-bold text-text mb-6">Provide Your Requirements</h3>
+              <p className="text-text-muted mb-8 text-lg">To help us respond quickly, please include:</p>
+              <ul className="grid grid-cols-1 md:grid-cols-3 gap-8 text-text font-medium">
+                <li className="flex flex-col items-center md:items-start gap-4">
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                    <Package className="w-7 h-7" />
+                  </div>
+                  <span className="text-center md:text-left">Product(s) required<br/><span className="text-sm text-text-muted font-normal">(e.g., Urea 46%, NPK, DAP, Potash)</span></span>
+                </li>
+                <li className="flex flex-col items-center md:items-start gap-4">
+                  <div className="w-14 h-14 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+                    <Building2 className="w-7 h-7" />
+                  </div>
+                  <span className="text-center md:text-left">Required bulk<br/><span className="text-sm text-text-muted font-normal">quantities</span></span>
+                </li>
+                <li className="flex flex-col items-center md:items-start gap-4">
+                  <div className="w-14 h-14 rounded-2xl bg-accent/10 text-accent flex items-center justify-center shrink-0">
+                    <Globe2 className="w-7 h-7" />
+                  </div>
+                  <span className="text-center md:text-left">Delivery location<br/><span className="text-sm text-text-muted font-normal">or destination port</span></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start max-w-6xl mx-auto">
             
             {/* Left Col - Context */}
@@ -153,32 +181,7 @@ export function Contact() {
           </div>
 
           <div className="mt-20 max-w-4xl mx-auto flex flex-col gap-12">
-            <div className="bg-card border border-border p-8 md:p-12 rounded-3xl text-center md:text-left">
-              <h3 className="text-2xl font-bold text-text mb-6">Provide Your Requirements</h3>
-              <p className="text-text-muted mb-8 text-lg">To help us respond quickly, please include:</p>
-              <ul className="grid grid-cols-1 md:grid-cols-3 gap-8 text-text font-medium">
-                <li className="flex flex-col items-center md:items-start gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                    <Package className="w-7 h-7" />
-                  </div>
-                  <span className="text-center md:text-left">Product(s) required<br/><span className="text-sm text-text-muted font-normal">(e.g., Urea 46%, NPK, DAP, Potash)</span></span>
-                </li>
-                <li className="flex flex-col items-center md:items-start gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
-                    <Building2 className="w-7 h-7" />
-                  </div>
-                  <span className="text-center md:text-left">Required bulk<br/><span className="text-sm text-text-muted font-normal">quantities</span></span>
-                </li>
-                <li className="flex flex-col items-center md:items-start gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-accent/10 text-accent flex items-center justify-center shrink-0">
-                    <Globe2 className="w-7 h-7" />
-                  </div>
-                  <span className="text-center md:text-left">Delivery location<br/><span className="text-sm text-text-muted font-normal">or destination port</span></span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="text-center border-t border-border pt-12">
+            <div className="text-center pt-12">
               <p className="text-lg text-text-muted">
                 All products are supplied in bulk quantities for commercial use only.
               </p>
