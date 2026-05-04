@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { CheckCircle2, Factory, Globe2, Truck, Users, AlertCircle, Phone } from 'lucide-react';
 import { Button } from './Button';
@@ -10,19 +9,6 @@ interface ProductSectionsProps {
 
 export function ProductSections({ productName }: ProductSectionsProps) {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    document.title = `${productName} | Bulk Fertilizer Supplier`;
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', `Bulk supply and delivery of ${productName} for commercial farming, importers, and distributors. Request wholesale pricing today.`);
-    } else {
-      metaDescription = document.createElement('meta');
-      metaDescription.setAttribute('name', 'description');
-      metaDescription.setAttribute('content', `Bulk supply and delivery of ${productName} for commercial farming, importers, and distributors. Request wholesale pricing today.`);
-      document.head.appendChild(metaDescription);
-    }
-  }, [productName]);
 
   return (
     <>

@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
@@ -19,27 +20,30 @@ import { ThankYou } from './pages/ThankYou';
 
 export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="products" element={<Products />} />
-          <Route path="products/urea" element={<Urea />} />
-          <Route path="products/dap" element={<DAP />} />
-          <Route path="products/npk" element={<NPK />} />
-          <Route path="products/map" element={<MAP />} />
-          <Route path="products/can" element={<CAN />} />
-          <Route path="products/ammonium-nitrate" element={<AmmoniumNitrate />} />
-          <Route path="products/potash" element={<Potash />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="blog/:slug" element={<BlogPost />} />
-          <Route path="privacy" element={<Privacy />} />
-          <Route path="terms" element={<Terms />} />
-          <Route path="thank-you" element={<ThankYou />} />
-        </Route>
-      </Routes>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="products" element={<Products />} />
+            <Route path="products/urea" element={<Urea />} />
+            <Route path="products/dap" element={<DAP />} />
+            <Route path="products/npk" element={<NPK />} />
+            <Route path="products/map" element={<MAP />} />
+            <Route path="products/can" element={<CAN />} />
+            <Route path="products/ammonium-nitrate" element={<AmmoniumNitrate />} />
+            <Route path="products/potash" element={<Potash />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="blog/:slug" element={<BlogPost />} />
+            <Route path="privacy" element={<Privacy />} />
+            <Route path="terms" element={<Terms />} />
+            <Route path="thank-you" element={<ThankYou />} />
+          </Route>
+        </Routes>
+      </Router>
+    </HelmetProvider>
   );
 }
+

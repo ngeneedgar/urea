@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Box, TrendingUp, Globe2, Truck, Server, PackageOpen } from 'lucide-react';
 import { Button } from '../components/Button';
+import { SEO } from '../components/SEO';
 
 const products = [
   {
@@ -80,21 +80,13 @@ const products = [
 ];
 
 export function Products() {
-  useEffect(() => {
-    document.title = 'Bulk Fertilizer Supplier | NPK, Urea, DAP, MAP, CAN, Potassium Chloride';
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Bulk fertilizer supply for farms and distributors. NPK, Urea 46%, DAP, MAP, CAN, Ammonium nitrate Fertilizer, and Potassium Chloride Fertilizer [Potash]. Request wholesale pricing today.');
-    } else {
-      metaDescription = document.createElement('meta');
-      metaDescription.setAttribute('name', 'description');
-      metaDescription.setAttribute('content', 'Bulk fertilizer supply for farms and distributors. NPK, Urea 46%, DAP, MAP, CAN, Ammonium nitrate Fertilizer, and Potassium Chloride Fertilizer [Potash]. Request wholesale pricing today.');
-      document.head.appendChild(metaDescription);
-    }
-  }, []);
-
   return (
     <div className="flex flex-col min-h-screen bg-background">
+      <SEO 
+        title="Bulk Fertilizer Supplier | NPK, Urea, DAP, MAP, CAN, Potassium Chloride" 
+        description="Bulk fertilizer supply for farms and distributors. NPK, Urea 46%, DAP, MAP, CAN, Ammonium nitrate Fertilizer, and Potassium Chloride Fertilizer [Potash]. Request wholesale pricing today."
+        url="https://novaferti.com/products"
+      />
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden bg-card border-b border-border">
         <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">

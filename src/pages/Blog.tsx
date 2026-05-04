@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { BookOpen, ArrowRight, ShieldCheck, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/Button';
 import { blogPosts } from '../data/blogPosts';
+import { SEO } from '../components/SEO';
 
 const categories = [
   'All',
@@ -16,27 +17,17 @@ const categories = [
 export function Blog() {
   const [activeCategory, setActiveCategory] = useState('All');
 
-  useEffect(() => {
-    document.title = 'Fertilizer Supply Insights | Bulk Fertilizer for Agriculture';
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Insights on bulk fertilizer supply, crop nutrition, and sourcing for farms and distributors. Practical content for commercial agriculture.');
-    } else {
-      metaDescription = document.createElement('meta');
-      metaDescription.setAttribute('name', 'description');
-      metaDescription.setAttribute('content', 'Insights on bulk fertilizer supply, crop nutrition, and sourcing for farms and distributors. Practical content for commercial agriculture.');
-      document.head.appendChild(metaDescription);
-    }
-    
-    // Clean up function not strictly necessary but good practice to reset if we had a global generic title
-  }, []);
-
   const filteredPosts = activeCategory === 'All' 
     ? blogPosts 
     : blogPosts.filter(post => post.category === activeCategory);
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
+      <SEO 
+        title="Fertilizer Supply Insights | Bulk Fertilizer for Agriculture" 
+        description="Insights on bulk fertilizer supply, crop nutrition, and sourcing for farms and distributors. Practical content for commercial agriculture."
+        url="https://novaferti.com/blog"
+      />
       {/* Hero */}
       <section className="relative py-32 overflow-hidden bg-card border-b border-border">
         <div className="absolute inset-0 z-0">

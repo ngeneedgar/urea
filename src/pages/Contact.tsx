@@ -1,24 +1,16 @@
-import { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Send, Building2, Package, Globe2 } from 'lucide-react';
 import { Button } from '../components/Button';
+import { SEO } from '../components/SEO';
 
 export function Contact() {
-  useEffect(() => {
-    document.title = 'Contact Bulk Fertilizer Supplier | Request Pricing';
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Contact us to request bulk fertilizer pricing, product specifications, and delivery details. Business inquiries only.');
-    } else {
-      metaDescription = document.createElement('meta');
-      metaDescription.setAttribute('name', 'description');
-      metaDescription.setAttribute('content', 'Contact us to request bulk fertilizer pricing, product specifications, and delivery details. Business inquiries only.');
-      document.head.appendChild(metaDescription);
-    }
-  }, []);
-
   return (
     <div className="flex flex-col min-h-screen bg-background">
+      <SEO 
+        title="Contact Bulk Fertilizer Supplier | Request Pricing" 
+        description="Contact us to request bulk fertilizer pricing, product specifications, and delivery details. Business inquiries only."
+        url="https://novaferti.com/contact"
+      />
       {/* Header */}
       <section className="py-24 bg-card border-b border-border relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 pointer-events-none" />

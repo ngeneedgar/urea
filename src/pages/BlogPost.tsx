@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { ArrowLeft, Calendar } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 import Markdown from 'react-markdown';
+import { SEO } from '../components/SEO';
 
 export function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
@@ -11,6 +12,7 @@ export function BlogPost() {
   if (!post) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-background text-text">
+        <SEO title="Article Not Found" description="The article you are looking for does not exist." />
         <h1 className="text-4xl font-bold mb-4">Article Not Found</h1>
         <Link to="/blog" className="text-primary hover:underline flex items-center gap-2">
           <ArrowLeft className="w-4 h-4" /> Back to Blog
@@ -21,6 +23,11 @@ export function BlogPost() {
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
+      <SEO 
+        title={post.title} 
+        description={post.excerpt}
+        url={`https://novaferti.com/blog/${post.slug}`}
+      />
       {/* Hero Image */}
       <section className="relative pt-24 pb-12 md:pt-32 md:pb-20">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">

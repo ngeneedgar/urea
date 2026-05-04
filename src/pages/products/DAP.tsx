@@ -3,12 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Leaf } from 'lucide-react';
 import { Button } from '../../components/Button';
 import { ProductSections } from '../../components/ProductSections';
+import { SEO } from '../../components/SEO';
 
 export function DAP() {
   const navigate = useNavigate();
 
   return (
     <div className="flex flex-col min-h-screen bg-background pt-20">
+      <SEO 
+        title="DAP fertilizer [Diammonium Phosphate]" 
+        description="Phosphorus-rich fertilizer that supports root development and early crop establishment. Request DAP bulk pricing."
+        url="https://novaferti.com/products/dap"
+      />
       <section className="pt-12 pb-24 md:pt-16 md:pb-32">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

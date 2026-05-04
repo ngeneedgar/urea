@@ -4,6 +4,7 @@ import { ArrowRight, Leaf, Droplets, ShieldCheck, Sprout, BookOpen, Truck, Scale
 import { Button } from '../components/Button';
 import { AnimatedCounter } from '../components/AnimatedCounter';
 import { ProductCard } from '../components/ProductCard';
+import { SEO } from '../components/SEO';
 
 export function Home() {
   const { scrollY } = useScroll();
@@ -11,6 +12,11 @@ export function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <SEO 
+        title="Global Leader in Sustainable Fertilizer Trading" 
+        description="Novaferti connects global demand with premier agricultural solutions, supplying NPK, Urea, DAP, and more across borders."
+        url="https://novaferti.com/"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
         {/* Full-bleed background image */}

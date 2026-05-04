@@ -2,10 +2,16 @@ import { motion } from 'motion/react';
 import { Target, Eye, Leaf, ShieldCheck, Globe, Truck, Users } from 'lucide-react';
 import { Button } from '../components/Button';
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/SEO';
 
 export function About() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
+      <SEO 
+        title="About Us" 
+        description="Learn about Novaferti's mission, vision, and core values. We are committed to agricultural innovation, sustainability, and supporting global food security."
+        url="https://novaferti.com/about"
+      />
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden bg-card border-b border-border">
         <div className="absolute inset-0 z-0">
